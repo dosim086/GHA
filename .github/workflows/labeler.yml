@@ -9,3 +9,23 @@ jobs:
       - uses: actions/labeler@v3
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
+  
+  check-varibales:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install
+        run: echo ${{ secrets.DEV_AWS_SECRET }}
+ 
+  check-varibales2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install2
+        run: echo ${{ secrets.MY_SECRET }}
+
+  check-varibales3:
+    runs-on: ubuntu-latest
+    environment: FORK_NAME
+    steps:
+      - name: Install3
+        run: echo ${{ secrets.MY_SECRET }}
+
