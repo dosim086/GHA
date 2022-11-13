@@ -1,0 +1,14 @@
+automation:
+  - automation/**/*
+
+backend:
+  - backend/**/*
+
+frontend:
+  - frontend/**/*
+
+shared:
+  - shared/**/*
+
+tools:
+  - tools/**/*
